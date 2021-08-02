@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    background: #171F26;
+    top: 0;
+    position: -webkit-sticky;
+    color: whitesmoke;
+    /* box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.6); */
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid rgb(163, 155, 155); */
+}
+
+.left-hand-side-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 5rem;
+    height: 3rem;
+}
+
+input{
+    padding: 7px  12px;
+    border-top-left-radius: 10px;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    background: rgb(185, 179, 179);
+    border: 1px solid gray;
+    margin-left: 50px;
+}
+
+::placeholder{
+    color: whitesmoke;
+
+}
+
+
+img{
+    width: 100%;
+}
+
+.searchbar{
+    display: flex;
+    margin-left: 7rem;
+}
+.categories{
+    height: 30px;
+    font-size: 10px;
+    color: rgb(51, 50, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    color: whitesmoke;
+    background: rgb(185, 179, 179);
+    padding: 0 10px;
+    /* background: rgb(43, 45, 56); */
+}
+
+.fa-chevron-down{
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    margin-left: 5px;
+    font-size: 7px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F28705;
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+    border: 1px solid gray;
+    border-left: none;
+}
+
+
+.fa-search{
+    font-size: 12px;
+}
+
+
+.right-hand{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user img{
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.heart,
+.cart,
+.bell,
+.user{
+    margin-left: 20px;
+}
+
+.container{
+    display: flex;
+}
+
+.fa,.hr{
+    /* color: whitesmoke; */
+    cursor: pointer;
+}
+
+.siderbar{
+    height: 92.5vh;
+    width: 100%;
+    border-top: 1px solid gray;
+    position: sticky;
+    top: 7.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    background: #171F26;
+    flex-basis: 20%;
+}
+
+svg{
+    width: 20px;
+    margin-right: 05px;
+    height: 20px;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px 15px;
+    
+}
+
+.side:hover{
+    background: rgb(160, 156, 156);
+    transition: .5s ease-in-out;
+    color: #F28705;
+}
+ .side1{
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(160, 156, 156);
+     padding: 5px 15px;
+     margin: 10px;
+ }
+.side1 .none:hover{
+    display: block;
+}
+.main{
+    flex-basis: 100%;
+    background: whitesmoke;
+    height: 200vh;
+}
+
+.first-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 98%;
+    height: 11rem;
+    border-radius: 20px;
+    margin: auto;
+    background-image: url('https://i.ibb.co/JnmTD12/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: whitesmoke;
+    border: 1px solid gray;
+    box-shadow: 0 0 20px 0px rgb(0, 5, 79, 0.6);
+    outline: none;
+    cursor: pointer;
+    color: #F28705;
+    transition: .5s ease-in-out;
+    margin-top: 80px;
+}
+
+.para{
+    margin-top: 20px;
+}
+
+.cart{
+    background: #F28705;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.cart a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+ .amount{
+     position: absolute;
+     top: 0;
+     right: 0;
+     font-size: 7px;
+     height: 12px;
+     color: #171F26;
+     border-radius: 10px;
+     width: 12px;
+     background-color: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+.med{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+} 
+
+.items, .item{
+    /* background: rebeccapurple; */
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.items .laptop:hover{
+    background: #171F26;
+    color: whitesmoke;
+}
+
+.laptop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 20px 0px rgb(0, 5, 79, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popular, .pop{
+    margin-top: 20px;
+    padding: 10px 19px;
+}
+
+.fa-star{
+    color: #F28705;
+}
+
+.samsung{
+    width: 200px;
+    height: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imi{
+    margin-top: 25px;
+}
+
+.but{
+    padding: 5px 10px;
+    background: #F28705;
+    border: navajowhite;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+/* .parsive{
+    margin-left: 23px;
+} */
+
+.parsive:hover{
+    color: red;
+    background: none;
+}
